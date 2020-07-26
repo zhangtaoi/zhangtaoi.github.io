@@ -98,7 +98,7 @@
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // Make changes here to the bash.exe profile.</span><br><span class="line">    <span class="string">"guid"</span>: <span class="string">"&#123;61c54bbd-c2c6-5271-96e7-009a87ff44b9&#125;"</span>,</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Git-Bash"</span>,</span><br><span class="line">    <span class="string">"commandline"</span>: <span class="string">"bash.exe"</span>,</span><br><span class="line">    “icon<span class="string">":"</span>D:\\<span class="number">07</span> Picture\\logo\\gwindows<span class="literal">-logo</span>.png<span class="string">",  //这里要用双斜杠指明路径</span></span><br><span class="line"><span class="string">    "</span><span class="keyword">hidden</span><span class="string">": false,</span></span><br><span class="line"><span class="string">    //"</span>backgroundImageOpacity<span class="string">": 0.1,</span></span><br><span class="line"><span class="string">		//背景透明度</span></span><br><span class="line"><span class="string">		"</span>useAcrylic<span class="string">": true,</span></span><br><span class="line"><span class="string">		// 启用毛玻璃效果</span></span><br><span class="line"><span class="string">		"</span>acrylicOpacity<span class="string">": 0.8,</span></span><br><span class="line"><span class="string">		"</span>fontFace<span class="string">": "</span>Consolas<span class="string">",</span></span><br><span class="line"><span class="string">		// 字体设置</span></span><br><span class="line"><span class="string">		"</span>fontSize<span class="string">": 12,</span></span><br><span class="line"><span class="string">		//字体大小</span></span><br><span class="line"><span class="string">		"</span>colorScheme<span class="string">":"</span>TaoJ<span class="string">",</span></span><br><span class="line"><span class="string">		// 各种字体的配色</span></span><br><span class="line"><span class="string">		//"</span>backgroundImage<span class="string">": "</span>D:\\<span class="number">07</span> Picture\\<span class="number">00</span> Wallpaper\\biying\\moon1.jpg<span class="string">",</span></span><br><span class="line"><span class="string">		//背景图片，可网址，可本地，必须要有两个斜杠</span></span><br><span class="line"><span class="string">		"</span>background<span class="string">": "</span><span class="comment">#0F2540"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
 <p>但是却提示报错：</p>
-<img src="Blog搭建过程\image-20200722000739271.png" alt="image-20200722000739271" style="zoom: 50%;" />
+<img src="Blog搭建过程\image1.jpg" alt="image-20200722000739271" style="zoom: 50%;" />
 
 <p>这是因为，虽然把bash.exe的路径添加到环境变量中了，但由于安全性的考虑，其权限是受到限制的，我懒得修改权限了，所以直接在profiles里把<code>&quot;commandline&quot;: &quot;bash.exe&quot;</code>改为<code>&quot;commandline&quot;: &quot;‪C:\\Program Files\\Git\\bin\\bash.exe&quot;</code>，也就是全路径即可。</p>
 <p>完了，本来成功了，现在又遇到这个问题：</p>
@@ -233,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/26/Blog%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" data-id="ckd2vf0ts0001n4v44h8masc3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/26/Blog%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" data-id="ckd2vj4dk0001o8v4fegoe8k1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
@@ -272,7 +272,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/22/testNewPaper/" data-id="ckd2vf0u80004n4v4gu66d3ie" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/22/testNewPaper/" data-id="ckd2vj4eg0004o8v48s4yhc10" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
@@ -323,7 +323,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/21/hello-world/" data-id="ckd2vf0ts0000n4v4absi1qyd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/21/hello-world/" data-id="ckd2vj4dk0000o8v422nqeccb" class="article-share-link">Share</a>
       
       
     </footer>
