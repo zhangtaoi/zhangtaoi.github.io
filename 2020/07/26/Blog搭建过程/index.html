@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="安装node.js安装git把Git Bash放入Windows Terminal打开everthing，搜索git，找到gitbash.exe的文件路径，我的是 1‪C:\Program Files\Git\git-bash.exe  把Git文件夹下的bin文件夹加入电脑的环境路径中去，因为最终会用到里面的bash.exe 下载一个git图标：GitLogo 下载好Windows Termin">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200722000739271.png">
+<meta property="og:image" content="d:/Blog/myblog/source/_posts/Blog搭建过程/image-20200722000739271.png">
 <meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200722002553103.png">
 <meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200721231140454.png">
 <meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200721231525505.png">
@@ -27,12 +27,14 @@
 <meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200722235759689.png">
 <meta property="og:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200723000039528.png">
 <meta property="og:image" content="d:%5C101Markdown%5CMATLAB%5Cfigure%5Cimage-20200723000232969.png">
+<meta property="og:image" content="d:%5C101Markdown%5CMATLAB%5Cfigure%5Cimage-20200726165529710.png">
+<meta property="og:image" content="d:/101Markdown/MATLAB/figure/image-20200726170300606.png">
 <meta property="article:published_time" content="2020-07-26T08:45:55.000Z">
-<meta property="article:modified_time" content="2020-07-26T08:48:24.359Z">
+<meta property="article:modified_time" content="2020-07-26T09:13:03.422Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/ZhangtaoNew/AppData/Roaming/Typora/typora-user-images/image-20200722000739271.png">
+<meta name="twitter:image" content="d:/Blog/myblog/source/_posts/Blog搭建过程/image-20200722000739271.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -109,15 +111,13 @@
 <p>把Git文件夹下的bin文件夹加入电脑的环境路径中去，因为最终会用到里面的bash.exe</p>
 <p>下载一个git图标：<a href="https://gitforwindows.org/img/gwindows_logo.png" target="_blank" rel="noopener">GitLogo</a></p>
 <p>下载好Windows Terminal后，打开其配置文件，复制第一个CMD文件出来一个，并添加到profiles数组里并放在第一个，这样第一、第二个是完全相同的，然后改掉对应的信息即可。我没有复制CMD的，复制了power shell 的，应该是一样的，改之前为：</p>
-<blockquote>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // Make changes here to the powershell.exe profile. //相关powershell改成bash</span><br><span class="line">    <span class="string">"guid"</span>: <span class="string">"&#123;61c54bbd-c2c6-5271-96e7-009a87ff44bf&#125;"</span>, //把最后一位改成<span class="number">9</span>，随便其它的也行</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Windows PowerShell"</span>, //改名字</span><br><span class="line">    <span class="string">"commandline"</span>: <span class="string">"powershell.exe"</span>, //改执行程序</span><br><span class="line">    <span class="string">"hidden"</span>: false,</span><br><span class="line">    //<span class="string">"backgroundImageOpacity"</span>: <span class="number">0.1</span>,</span><br><span class="line">		//背景透明度</span><br><span class="line">		<span class="string">"useAcrylic"</span>: true,</span><br><span class="line">		// 启用毛玻璃效果</span><br><span class="line">		<span class="string">"acrylicOpacity"</span>: <span class="number">0.8</span>,</span><br><span class="line">		<span class="string">"fontFace"</span>: <span class="string">"Consolas"</span>,</span><br><span class="line">		// 字体设置</span><br><span class="line">		<span class="string">"fontSize"</span>: <span class="number">12</span>,</span><br><span class="line">		//字体大小</span><br><span class="line">		<span class="string">"colorScheme"</span>:<span class="string">"TaoJ"</span>,</span><br><span class="line">		// 各种字体的配色</span><br><span class="line">		//<span class="string">"backgroundImage"</span>: <span class="string">"D:\\07 Picture\\00 Wallpaper\\biying\\moon1.jpg"</span>,</span><br><span class="line">		//背景图片，可网址，可本地，必须要有两个斜杠</span><br><span class="line">		<span class="string">"background"</span>: <span class="string">"#0F2540"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-</blockquote>
+
 <p>改之后为：</p>
-<blockquote>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // Make changes here to the bash.exe profile.</span><br><span class="line">    <span class="string">"guid"</span>: <span class="string">"&#123;61c54bbd-c2c6-5271-96e7-009a87ff44b9&#125;"</span>,</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Git-Bash"</span>,</span><br><span class="line">    <span class="string">"commandline"</span>: <span class="string">"bash.exe"</span>,</span><br><span class="line">    “icon<span class="string">":"</span>D:\\<span class="number">07</span> Picture\\logo\\gwindows<span class="literal">-logo</span>.png<span class="string">",  //这里要用双斜杠指明路径</span></span><br><span class="line"><span class="string">    "</span><span class="keyword">hidden</span><span class="string">": false,</span></span><br><span class="line"><span class="string">    //"</span>backgroundImageOpacity<span class="string">": 0.1,</span></span><br><span class="line"><span class="string">		//背景透明度</span></span><br><span class="line"><span class="string">		"</span>useAcrylic<span class="string">": true,</span></span><br><span class="line"><span class="string">		// 启用毛玻璃效果</span></span><br><span class="line"><span class="string">		"</span>acrylicOpacity<span class="string">": 0.8,</span></span><br><span class="line"><span class="string">		"</span>fontFace<span class="string">": "</span>Consolas<span class="string">",</span></span><br><span class="line"><span class="string">		// 字体设置</span></span><br><span class="line"><span class="string">		"</span>fontSize<span class="string">": 12,</span></span><br><span class="line"><span class="string">		//字体大小</span></span><br><span class="line"><span class="string">		"</span>colorScheme<span class="string">":"</span>TaoJ<span class="string">",</span></span><br><span class="line"><span class="string">		// 各种字体的配色</span></span><br><span class="line"><span class="string">		//"</span>backgroundImage<span class="string">": "</span>D:\\<span class="number">07</span> Picture\\<span class="number">00</span> Wallpaper\\biying\\moon1.jpg<span class="string">",</span></span><br><span class="line"><span class="string">		//背景图片，可网址，可本地，必须要有两个斜杠</span></span><br><span class="line"><span class="string">		"</span>background<span class="string">": "</span><span class="comment">#0F2540"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-</blockquote>
+
 <p>但是却提示报错：</p>
-<img src="C:\Users\ZhangtaoNew\AppData\Roaming\Typora\typora-user-images\image-20200722000739271.png" alt="image-20200722000739271" style="zoom: 50%;" />
+<img src="D:\Blog\myblog\source\_posts\Blog搭建过程\image-20200722000739271.png" alt="image-20200722000739271" style="zoom: 50%;" />
 
 <p>这是因为，虽然把bash.exe的路径添加到环境变量中了，但由于安全性的考虑，其权限是受到限制的，我懒得修改权限了，所以直接在profiles里把<code>&quot;commandline&quot;: &quot;bash.exe&quot;</code>改为<code>&quot;commandline&quot;: &quot;‪C:\\Program Files\\Git\\bin\\bash.exe&quot;</code>，也就是全路径即可。</p>
 <p>完了，本来成功了，现在又遇到这个问题：</p>
@@ -238,11 +238,19 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new Blog搭建过程</span><br></pre></td></tr></table></figure>
 
 <p>提示成功，说明还是可以用中文的</p>
+<p>然后打开source/_posts/Blog搭建过程，把目前写的内容都复制进去。不过我好奇的是，回头这篇博客里的图片它会怎么处理？？？？？？？？？是保存在什么地方的呢？还是说会在html文件包里把图片一个个再保存下来。打开看一眼。</p>
+<p>图片果然都挂了，如下：</p>
+<p><img src="D:%5C101Markdown%5CMATLAB%5Cfigure%5Cimage-20200726165529710.png" alt="image-20200726165529710"></p>
+<p>解决办法：相对路径引用</p>
+<p>在生成新文章时，自动生成一个同名的文件夹，把图像都放进去。找到文件_config.yml，修改post_asset_folder的值为true，保存关闭。</p>
+<img src="D:\101Markdown\MATLAB\figure\image-20200726170300606.png" alt="image-20200726170300606" style="zoom:50%;" />
+
+<p>在本次文章中，我们直接手动建立一个文件夹，叫==Blog搭建过程==，然后利用typro的图片右击复制图片到路径。然后再部署一下，看生成的网页中，是否能加载出第一幅图。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/26/Blog%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" data-id="ckd2uc2bi000070v46d8e19qh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/26/Blog%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" data-id="ckd2v7o4o0000q4v4cbd2h0ap" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
